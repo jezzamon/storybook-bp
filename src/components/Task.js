@@ -8,9 +8,9 @@ export default function Task({
   task: { id, title, state },
   onArchiveTask,
   onPinTask,
-  ...rest
+  theme1,
 }) {
-  console.log('rest', rest, id, title, state)
+  console.log('rest', theme1, id, title, state)
   return (
     <div className={`list-item ${state}`}>
       <label className="checkbox">
