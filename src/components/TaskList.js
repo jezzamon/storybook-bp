@@ -7,6 +7,9 @@ import Task from './Task';
 import { connect } from 'react-redux';
 import { archiveTask, pinTask } from '../lib/redux';
 
+/**
+ * Use `TaskList` to show list of tasks with a predefined status.
+ */
 export function PureTaskList({ loading, tasks, onPinTask, onArchiveTask }) {
   const events = {
     onPinTask,

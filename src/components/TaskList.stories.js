@@ -10,6 +10,9 @@ export default {
   title: 'TaskList',
   decorators: [story => <div style={{ padding: '3rem' }}>{story()}</div>],
   excludeStories: /.*Data$/,
+  parameters: {
+    componentSubtitle: 'Task List component',
+  },
 };
 
 export const defaultTasksData = [

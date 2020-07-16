@@ -1,0 +1,39 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Task.stories.js';
+import SomeComponent from './SomeComponent.js';
+import Task from './Task.js';
+
+<Meta title="MDX/Task" component={Task} />
+
+# Markdown with JSX
+
+I can define a story with the function imported from CSF:
+
+#### Default
+<Story name="default">
+  {stories.Default()}
+</Story>
+
+<Props of={Task} />
+
+#### Pinned
+
+  <Story name="pinned">
+    {stories.Pinned()}
+  </Story>
+
+#### Archived
+<Story name="archived">
+  {stories.Archived()}
+</Story>
+
+
+And I can also embed arbitrary markdown & JSX in this file.
+
+<Preview>
+  <SomeComponent prop1="val1" />
+</Preview>
+
+## Some more markdown here
+
+[I'm an inline-style link](https://www.google.com)

@@ -12,6 +12,10 @@ export default {
   decorators: [withKnobs],
   // Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,
+  parameters: {
+    componentSubtitle: 'Task component',
+  },
+  includeStories: [],
 };
 
 export const taskData = {
